@@ -4,40 +4,142 @@
       "title": "Ocean Mist",
       "thumbnail": {
         "label": "Dashboard",
-        "colors": ["#0F172A", "#38BDF8"]
+        "colors": [
+          "#0F172A",
+          "#38BDF8"
+        ]
       },
       "type": "配色",
-      "tags": ["深色", "仪表盘", "高对比"],
+      "tags": [
+        "深色",
+        "仪表盘",
+        "高对比"
+      ],
       "scenarios": "数据看板 / 运营日报 / 指标总览",
       "mainColor": "#0F172A",
       "highlight": "深色底配冷青强调，信息层级清晰。",
-      "note": "适合高密度界面和技术感较强的场景。"
+      "note": "适合高密度界面和技术感较强的场景。",
+      "secondaryColor": "#38BDF8",
+      "backgroundColor": "#08111F",
+      "gradientRule": "深色底 + 冷色强调，保持 70% 深色面、20% 辅助色、10% 强调点。",
+      "styleName": "冷静数据感",
+      "moodKeywords": [
+        "克制",
+        "理性",
+        "高对比"
+      ],
+      "emotionKeywords": [
+        "稳定",
+        "清晰",
+        "专业"
+      ],
+      "cardStructure": "一主一辅的并列色块，卡片边缘保留呼吸感。",
+      "infoHierarchy": "标题先行，主色承载视觉锚点，辅助色用于提示。",
+      "radius": "20px / 圆角卡片",
+      "shadow": "柔和外阴影，控制层级而不抢主体。",
+      "material": "半透明玻璃感",
+      "glow": "低强度冷色发光",
+      "border": "细边框 + 低透明度描边",
+      "suitableScenarios": "数据看板 / 运营日报 / 指标总览",
+      "unsuitableScenarios": "强节日氛围 / 高温暖品牌叙事",
+      "recommendedPageTypes": "首页总览 / 卡片流 / 指标面板",
+      "reusableRules": "先定主色，再补强调色和中性色。",
+      "prompt": "用于信息密度较高的界面，强调冷静、秩序和清晰层级。",
+      "pageStructure": "色块分区 / 主辅色对照 / 氛围分层"
     },
     {
       "title": "Sunlit Paper",
       "thumbnail": {
         "label": "Editorial",
-        "colors": ["#FFF7ED", "#F59E0B"]
+        "colors": [
+          "#FFF7ED",
+          "#F59E0B"
+        ]
       },
       "type": "配色",
-      "tags": ["暖色", "品牌页", "内容展示"],
+      "tags": [
+        "暖色",
+        "品牌页",
+        "内容展示"
+      ],
       "scenarios": "PPT 首页 / 内容页 / 品牌介绍",
       "mainColor": "#FFF7ED",
       "highlight": "暖而不刺眼，适合带有人文气质的表达。",
-      "note": "适合需要亲和感和阅读舒适度的页面。"
+      "note": "适合需要亲和感和阅读舒适度的页面。",
+      "secondaryColor": "#F59E0B",
+      "backgroundColor": "#FFF7ED",
+      "gradientRule": "暖底 + 金色强调，控制亮度避免过度刺眼。",
+      "styleName": "温暖内容感",
+      "moodKeywords": [
+        "温和",
+        "开放",
+        "轻松"
+      ],
+      "emotionKeywords": [
+        "亲和",
+        "友好",
+        "舒展"
+      ],
+      "cardStructure": "浅底大面积留白，强调色用于标题与关键提示。",
+      "infoHierarchy": "标题和关键结论优先，内容块之间保持松弛感。",
+      "radius": "24px / 轻松圆角",
+      "shadow": "轻阴影，维持纸感和呼吸感。",
+      "material": "纸张感 / 编辑感",
+      "glow": "低饱和暖色微光",
+      "border": "柔边框，减少硬边切割",
+      "suitableScenarios": "PPT 首页 / 内容页 / 品牌介绍",
+      "unsuitableScenarios": "极深色仪表盘 / 强科技风看板",
+      "recommendedPageTypes": "内容页 / 品牌页 / 介绍页",
+      "reusableRules": "暖色用于传达亲和感，主背景保持干净。",
+      "prompt": "用于品牌表达和内容展示，强调温暖、舒展和阅读舒适度。",
+      "pageStructure": "浅底大留白 / 标题重点 / 内容区呼吸"
     },
     {
       "title": "Forest Signal",
       "thumbnail": {
         "label": "Growth",
-        "colors": ["#052E16", "#22C55E"]
+        "colors": [
+          "#052E16",
+          "#22C55E"
+        ]
       },
       "type": "配色",
-      "tags": ["增长", "状态", "自然系"],
+      "tags": [
+        "增长",
+        "状态",
+        "自然系"
+      ],
       "scenarios": "增长分析 / 状态提示 / 周报图表",
       "mainColor": "#052E16",
       "highlight": "绿色层次明确，适合强调增长和健康状态。",
-      "note": "适合有正向指标、经营改善表达的场景。"
+      "note": "适合有正向指标、经营改善表达的场景。",
+      "secondaryColor": "#22C55E",
+      "backgroundColor": "#052E16",
+      "gradientRule": "深绿底 + 亮绿强调，形成增长与健康感。",
+      "styleName": "增长活力感",
+      "moodKeywords": [
+        "增长",
+        "自然",
+        "向上"
+      ],
+      "emotionKeywords": [
+        "积极",
+        "健康",
+        "振奋"
+      ],
+      "cardStructure": "左侧主视觉、右侧说明，突出指标变化。",
+      "infoHierarchy": "增长结论和趋势线优先，辅助内容放低一级。",
+      "radius": "18px / 轻锐角圆润",
+      "shadow": "中低强度阴影，保持稳重。",
+      "material": "自然系面板感",
+      "glow": "绿色轻发光",
+      "border": "清晰绿边框，增强状态识别",
+      "suitableScenarios": "增长分析 / 状态提示 / 周报图表",
+      "unsuitableScenarios": "高压品牌页 / 低饱和沉浸叙事",
+      "recommendedPageTypes": "趋势页 / 状态页 / 结果页",
+      "reusableRules": "增长类页面优先用主色表达结果。",
+      "prompt": "用于增长和健康状态表达，强调积极、自然与结果导向。",
+      "pageStructure": "左主视觉 / 右说明块 / 状态强调"
     }
   ]
 }

@@ -4,40 +4,142 @@
       "title": "运营首页",
       "thumbnail": {
         "label": "Home",
-        "colors": ["#0F172A", "#A78BFA"]
+        "colors": [
+          "#0F172A",
+          "#A78BFA"
+        ]
       },
       "type": "页面",
-      "tags": ["首页", "总览", "模块化"],
+      "tags": [
+        "首页",
+        "总览",
+        "模块化"
+      ],
       "scenarios": "经营首页 / 项目首页 / 产品总览",
       "mainColor": "#A78BFA",
       "highlight": "头部总览加多模块分区，适合承载复杂信息。",
-      "note": "关注信息层级与首屏抓重点。"
+      "note": "关注信息层级与首屏抓重点。",
+      "secondaryColor": "#0F172A",
+      "backgroundColor": "#0B1220",
+      "gradientRule": "首屏大面积主色，模块切换使用中性色过渡。",
+      "styleName": "叙事导览感",
+      "moodKeywords": [
+        "故事",
+        "节奏",
+        "导览"
+      ],
+      "emotionKeywords": [
+        "沉浸",
+        "连贯",
+        "有层次"
+      ],
+      "cardStructure": "强封面 + 中段模块化 + 末尾总结块。",
+      "infoHierarchy": "标题和主视觉先出现，内容按节奏逐层展开。",
+      "radius": "24px / 叙事型圆角",
+      "shadow": "中等柔和阴影，增强页面漂浮感。",
+      "material": "轻雾面 + 层叠卡片",
+      "glow": "章节转场弱发光",
+      "border": "低对比边框，避免干扰阅读",
+      "suitableScenarios": "首页 / 落地页 / 长图叙事页",
+      "unsuitableScenarios": "极简工具页 / 纯表格页面",
+      "recommendedPageTypes": "首页 / 长图 / 品牌页",
+      "reusableRules": "先保证层级，再保证节奏。",
+      "prompt": "用于内容叙事和页面导览，强调从首屏到细节的层次推进。",
+      "pageStructure": "首屏标题 / 模块分区 / 节奏递进"
     },
     {
       "title": "专题落地页",
       "thumbnail": {
         "label": "Landing",
-        "colors": ["#111827", "#FB7185"]
+        "colors": [
+          "#111827",
+          "#FB7185"
+        ]
       },
       "type": "页面",
-      "tags": ["活动页", "故事线", "转化"],
+      "tags": [
+        "活动页",
+        "故事线",
+        "转化"
+      ],
       "scenarios": "专题发布 / 活动介绍 / 产品宣传",
       "mainColor": "#FB7185",
       "highlight": "通过节奏和视觉锚点建立浏览路径。",
-      "note": "适合需要把信息讲清楚的单页结构。"
+      "note": "适合需要把信息讲清楚的单页结构。",
+      "secondaryColor": "#FB7185",
+      "backgroundColor": "#111827",
+      "gradientRule": "深色背景承托强标题色，节奏靠模块分隔推进。",
+      "styleName": "活动转化感",
+      "moodKeywords": [
+        "转化",
+        "强引导",
+        "紧凑"
+      ],
+      "emotionKeywords": [
+        "促动",
+        "明确",
+        "热度"
+      ],
+      "cardStructure": "首屏焦点 + 中段证据 + 行动按钮收口。",
+      "infoHierarchy": "主标题优先，其次是视觉锚点和转化信息。",
+      "radius": "20px / 活动页圆角",
+      "shadow": "中强阴影，形成前后层次。",
+      "material": "营销页面感",
+      "glow": "标题轻发光",
+      "border": "紧凑边线，强化模块感",
+      "suitableScenarios": "专题发布 / 活动介绍 / 产品宣传",
+      "unsuitableScenarios": "重数据报表 / 多层级管理后台",
+      "recommendedPageTypes": "专题页 / 落地页 / 转化页",
+      "reusableRules": "故事线清晰，首屏必须抓住注意力。",
+      "prompt": "用于活动和转化表达，强调节奏、吸引力和行动引导。",
+      "pageStructure": "封面焦点 / 证据模块 / 行动收口"
     },
     {
       "title": "长图叙事页",
       "thumbnail": {
         "label": "Story",
-        "colors": ["#0B1220", "#38BDF8"]
+        "colors": [
+          "#0B1220",
+          "#38BDF8"
+        ]
       },
       "type": "页面",
-      "tags": ["长图", "叙事", "阅读"],
+      "tags": [
+        "长图",
+        "叙事",
+        "阅读"
+      ],
       "scenarios": "公众号长图 / 报告页 / 品牌故事",
       "mainColor": "#38BDF8",
       "highlight": "适合从上到下的故事推进与视觉节奏控制。",
-      "note": "适合做解释型和展示型页面参考。"
+      "note": "适合做解释型和展示型页面参考。",
+      "secondaryColor": "#38BDF8",
+      "backgroundColor": "#0B1220",
+      "gradientRule": "深蓝底 + 青蓝锚点，强调长图叙事连续性。",
+      "styleName": "长图叙事感",
+      "moodKeywords": [
+        "长图",
+        "阅读",
+        "顺滑"
+      ],
+      "emotionKeywords": [
+        "沉浸",
+        "延展",
+        "专注"
+      ],
+      "cardStructure": "纵向分段，图文交替推进。",
+      "infoHierarchy": "每一屏只讲一个重点，避免信息拥挤。",
+      "radius": "22px / 长图圆角",
+      "shadow": "柔中度阴影，支持纵向阅读。",
+      "material": "长图阅读感",
+      "glow": "关键节点轻高亮",
+      "border": "轻边框，保持画面通透",
+      "suitableScenarios": "公众号长图 / 报告页 / 品牌故事",
+      "unsuitableScenarios": "短促弹窗 / 强交互表单页",
+      "recommendedPageTypes": "长图 / 故事页 / 解读页",
+      "reusableRules": "从上到下控制阅读节奏和停顿点。",
+      "prompt": "用于长图和故事型页面，强调连续阅读、视觉节奏和信息层次。",
+      "pageStructure": "纵向分段 / 图文交替 / 节点停顿"
     }
   ]
 }

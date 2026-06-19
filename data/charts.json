@@ -4,40 +4,142 @@
       "title": "KPI 组合图",
       "thumbnail": {
         "label": "KPI",
-        "colors": ["#0F172A", "#7DD3FC"]
+        "colors": [
+          "#0F172A",
+          "#7DD3FC"
+        ]
       },
       "type": "图表",
-      "tags": ["看板", "指标", "组合"],
+      "tags": [
+        "看板",
+        "指标",
+        "组合"
+      ],
       "scenarios": "驾驶舱首页 / 周报总览 / 经营监控",
       "mainColor": "#7DD3FC",
       "highlight": "用单屏组合展示核心指标与趋势。",
-      "note": "适合做首页总览，不强调复杂交互。"
+      "note": "适合做首页总览，不强调复杂交互。",
+      "secondaryColor": "#0F172A",
+      "backgroundColor": "#08111F",
+      "gradientRule": "深色底 + 高亮数据色，主体留白与数据面板并重。",
+      "styleName": "经营分析感",
+      "moodKeywords": [
+        "分析",
+        "清晰",
+        "密度高"
+      ],
+      "emotionKeywords": [
+        "可信",
+        "聚焦",
+        "专业"
+      ],
+      "cardStructure": "图表区居中，左右模块承接结论与注释。",
+      "infoHierarchy": "先呈现结论，再呈现趋势和解释。",
+      "radius": "16px / 更紧凑的看板圆角",
+      "shadow": "低模糊深阴影，强调面板层级。",
+      "material": "数据仪表盘面板感",
+      "glow": "重点数据轻微外发光",
+      "border": "清晰边界线，便于读数",
+      "suitableScenarios": "日报 / 经营看板 / 决策汇报",
+      "unsuitableScenarios": "纯品牌展示 / 情绪氛围图",
+      "recommendedPageTypes": "看板页 / 指标页 / 汇报页",
+      "reusableRules": "让图表先讲结论，再补过程。",
+      "prompt": "用于经营汇报和指标监控，强调可读性、层级和结论前置。",
+      "pageStructure": "标题区 / 图表区 / 注释区"
     },
     {
       "title": "趋势折线板",
       "thumbnail": {
         "label": "Trend",
-        "colors": ["#111827", "#22D3EE"]
+        "colors": [
+          "#111827",
+          "#22D3EE"
+        ]
       },
       "type": "图表",
-      "tags": ["趋势", "时间序列", "增长"],
+      "tags": [
+        "趋势",
+        "时间序列",
+        "增长"
+      ],
       "scenarios": "日报趋势 / 月度变化 / 预测跟踪",
       "mainColor": "#22D3EE",
       "highlight": "折线与面积结合，便于读取增长节奏。",
-      "note": "适合说明过程变化，而不是只报结果。"
+      "note": "适合说明过程变化，而不是只报结果。",
+      "secondaryColor": "#22D3EE",
+      "backgroundColor": "#111827",
+      "gradientRule": "深底搭配青色折线，强调趋势连续性。",
+      "styleName": "趋势跟踪感",
+      "moodKeywords": [
+        "趋势",
+        "连续",
+        "敏捷"
+      ],
+      "emotionKeywords": [
+        "流动",
+        "清晰",
+        "跟随"
+      ],
+      "cardStructure": "上方指标，下方趋势，视线自然下移。",
+      "infoHierarchy": "趋势线是主角，辅助图层提供解释。",
+      "radius": "18px / 分析页圆角",
+      "shadow": "轻深阴影，强调数据板块的浮起。",
+      "material": "半透明看板感",
+      "glow": "趋势线轻微霓虹发光",
+      "border": "极细边框，避免压住数据",
+      "suitableScenarios": "日报趋势 / 月度变化 / 预测跟踪",
+      "unsuitableScenarios": "纯装饰页 / 大色块插画页",
+      "recommendedPageTypes": "趋势页 / 报表页 / 预测页",
+      "reusableRules": "折线图周围保留足够留白。",
+      "prompt": "用于趋势展示和预测跟踪，强调连续性、轻科技感和读数效率。",
+      "pageStructure": "指标区 / 趋势区 / 解释区"
     },
     {
       "title": "分布条形板",
       "thumbnail": {
         "label": "Distribution",
-        "colors": ["#1E293B", "#F59E0B"]
+        "colors": [
+          "#1E293B",
+          "#F59E0B"
+        ]
       },
       "type": "图表",
-      "tags": ["分布", "对比", "排序"],
+      "tags": [
+        "分布",
+        "对比",
+        "排序"
+      ],
       "scenarios": "品类对比 / 区域分布 / 结构分析",
       "mainColor": "#F59E0B",
       "highlight": "条形长度直接表达结构差异，阅读成本低。",
-      "note": "适合需要快速比较高低差的场景。"
+      "note": "适合需要快速比较高低差的场景。",
+      "secondaryColor": "#F59E0B",
+      "backgroundColor": "#1E293B",
+      "gradientRule": "中深底 + 对比条形，突出分布差异。",
+      "styleName": "结构比较感",
+      "moodKeywords": [
+        "比较",
+        "结构",
+        "排序"
+      ],
+      "emotionKeywords": [
+        "明确",
+        "稳重",
+        "可读"
+      ],
+      "cardStructure": "左指标右图表，形成快速比较路径。",
+      "infoHierarchy": "先看排序，再看分布，再看异常点。",
+      "radius": "14px / 紧凑图表角",
+      "shadow": "短投影，保持紧凑和清楚。",
+      "material": "功能型图表面板",
+      "glow": "强调色轻提亮",
+      "border": "明确边界，适合排序类图表",
+      "suitableScenarios": "品类对比 / 区域分布 / 结构分析",
+      "unsuitableScenarios": "情绪表达页 / 长文本讲述页",
+      "recommendedPageTypes": "对比页 / 分布页 / 结构页",
+      "reusableRules": "对比类图表必须让差异一眼可见。",
+      "prompt": "用于结构对比和分布表达，强调排序清晰和差异直读。",
+      "pageStructure": "对比区 / 排序区 / 说明区"
     }
   ]
 }

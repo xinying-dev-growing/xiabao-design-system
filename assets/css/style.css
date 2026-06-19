@@ -634,6 +634,63 @@ h1 {
   line-height: 1.6;
 }
 
+.asset-layer-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.asset-section {
+  border-top: 1px solid rgba(148, 163, 184, 0.14);
+  padding-top: 14px;
+}
+
+.asset-section h4 {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.asset-layer-list {
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.asset-layer-list div {
+  display: grid;
+  gap: 4px;
+}
+
+.asset-layer-list dt {
+  color: rgba(125, 211, 252, 0.92);
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.asset-layer-list dd {
+  margin: 0;
+  color: rgba(229, 238, 251, 0.86);
+  line-height: 1.7;
+}
+
+.asset-pill {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 8px 8px 0;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.58);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.asset-card-draft {
+  outline: 1px dashed rgba(125, 211, 252, 0.25);
+  outline-offset: -1px;
+}
+
 .favorites-panel {
   padding: 24px;
 }
@@ -839,5 +896,11 @@ h1 {
 
   .draft-grid {
     grid-template-columns: 1fr;
+  }
+
+  .asset-pill {
+    display: inline-flex;
+    max-width: 100%;
+    margin-right: 6px;
   }
 }

@@ -5,13 +5,26 @@ const libraryDefinitions = [
     selector: "[data-library-grid='palettes']",
     file: "data/palettes.json",
     thumbnailLabel: "Palette",
-    scenarios: "PPT / 日报 / 驾驶舱 / 视觉系统",
+    mainColor: "#0F172A",
+    secondaryColor: "#38BDF8",
+    backgroundColor: "#08111F",
+    gradientRule: "深色底 + 冷色强调，保持 70% 深色面、20% 辅助色、10% 强调点。",
+    styleName: "冷静数据感",
+    moodKeywords: ["克制", "理性", "高对比"],
+    emotionKeywords: ["稳定", "清晰", "专业"],
     pageStructure: "色块组合 / 强调层级 / 氛围分层",
-    chartStyle: "色彩对比 / 指标强调 / 信息层级",
-    iconStyle: "简洁线性 / 高识别 / 圆角化",
-    illustrationStyle: "扁平 / 色彩统一 / 氛围感",
-    pptPattern: "封面色带 / 章节页 / 主题块拼接",
-    rules: "先定主色，再补强调色和中性色。",
+    cardStructure: "一主一辅的并列色块，卡片边缘保留呼吸感。",
+    infoHierarchy: "标题先行，主色承载视觉锚点，辅助色用于提示。",
+    radius: "20px / 圆角卡片",
+    shadow: "柔和外阴影，控制层级而不抢主体。",
+    material: "半透明玻璃感",
+    glow: "低强度冷色发光",
+    border: "细边框 + 低透明度描边",
+    suitableScenarios: "数据看板 / 运营日报 / 指标总览",
+    unsuitableScenarios: "强节日氛围 / 高温暖品牌叙事",
+    recommendedPageTypes: "首页总览 / 卡片流 / 指标面板",
+    reusableRules: "先定主色，再补强调色和中性色。",
+    prompt: "用于信息密度较高的界面，强调冷静、秩序和清晰层级。",
   },
   {
     key: "charts",
@@ -19,13 +32,26 @@ const libraryDefinitions = [
     selector: "[data-library-grid='charts']",
     file: "data/charts.json",
     thumbnailLabel: "Chart",
-    scenarios: "日报 / 经营看板 / 决策汇报",
+    mainColor: "#7DD3FC",
+    secondaryColor: "#0F172A",
+    backgroundColor: "#08111F",
+    gradientRule: "深色底 + 高亮数据色，主体留白与数据面板并重。",
+    styleName: "经营分析感",
+    moodKeywords: ["分析", "清晰", "密度高"],
+    emotionKeywords: ["可信", "聚焦", "专业"],
     pageStructure: "标题区 / 指标区 / 主图表 / 辅助说明",
-    chartStyle: "高对比 / 信息密度高 / 直读型",
-    iconStyle: "数据符号化 / 轻量辅助 / 语义清晰",
-    illustrationStyle: "弱装饰 / 功能优先 / 轻视觉点缀",
-    pptPattern: "数据块并列 / 趋势图组合 / 结论前置",
-    rules: "让图表先讲结论，再补过程。",
+    cardStructure: "图表区居中，左右模块承接结论与注释。",
+    infoHierarchy: "先呈现结论，再呈现趋势和解释。",
+    radius: "16px / 更紧凑的看板圆角",
+    shadow: "低模糊深阴影，强调面板层级。",
+    material: "数据仪表盘面板感",
+    glow: "重点数据轻微外发光",
+    border: "清晰边界线，便于读数",
+    suitableScenarios: "日报 / 经营看板 / 决策汇报",
+    unsuitableScenarios: "纯品牌展示 / 情绪氛围图",
+    recommendedPageTypes: "看板页 / 指标页 / 汇报页",
+    reusableRules: "让图表先讲结论，再补过程。",
+    prompt: "用于经营汇报和指标监控，强调可读性、层级和结论前置。",
   },
   {
     key: "pages",
@@ -33,13 +59,26 @@ const libraryDefinitions = [
     selector: "[data-library-grid='pages']",
     file: "data/pages.json",
     thumbnailLabel: "Page",
-    scenarios: "首页 / 落地页 / 长图叙事页",
+    mainColor: "#A78BFA",
+    secondaryColor: "#0F172A",
+    backgroundColor: "#0B1220",
+    gradientRule: "首屏大面积主色，模块切换使用中性色过渡。",
+    styleName: "叙事导览感",
+    moodKeywords: ["故事", "节奏", "导览"],
+    emotionKeywords: ["沉浸", "连贯", "有层次"],
     pageStructure: "首屏标题 / 模块分区 / 节奏递进",
-    chartStyle: "混合图表 / 内容辅助 / 视觉锚点",
-    iconStyle: "导航型 / 分组型 / 状态提示型",
-    illustrationStyle: "叙事型 / 背景增强 / 情绪氛围",
-    pptPattern: "封面-目录-内容-总结",
-    rules: "先保证层级，再保证节奏。",
+    cardStructure: "强封面 + 中段模块化 + 末尾总结块。",
+    infoHierarchy: "标题和主视觉先出现，内容按节奏逐层展开。",
+    radius: "24px / 叙事型圆角",
+    shadow: "中等柔和阴影，增强页面漂浮感。",
+    material: "轻雾面 + 层叠卡片",
+    glow: "章节转场弱发光",
+    border: "低对比边框，避免干扰阅读",
+    suitableScenarios: "首页 / 落地页 / 长图叙事页",
+    unsuitableScenarios: "极简工具页 / 纯表格页面",
+    recommendedPageTypes: "首页 / 长图 / 品牌页",
+    reusableRules: "先保证层级，再保证节奏。",
+    prompt: "用于内容叙事和页面导览，强调从首屏到细节的层次推进。",
   },
   {
     key: "templates",
@@ -47,13 +86,26 @@ const libraryDefinitions = [
     selector: "[data-library-grid='templates']",
     file: "data/templates.json",
     thumbnailLabel: "Template",
-    scenarios: "PPT / 报告 / 章节页 / 方案页",
+    mainColor: "#FDE047",
+    secondaryColor: "#0F172A",
+    backgroundColor: "#111827",
+    gradientRule: "封面主色 + 黑白中性色，形成清晰版式骨架。",
+    styleName: "演示模板感",
+    moodKeywords: ["结构化", "规范", "演示"],
+    emotionKeywords: ["干净", "明确", "可靠"],
     pageStructure: "封面 / 章节转场 / 对照页 / 说明页",
-    chartStyle: "模板化 / 组件化 / 易替换",
-    iconStyle: "概念性 / 模块化 / 标识明确",
-    illustrationStyle: "拼接式 / 版式优先 / 主题统一",
-    pptPattern: "封面大标题 / 分章 / 双栏说明",
-    rules: "版式先统一，再追求风格扩散。",
+    cardStructure: "模块拼接清晰，留白支持信息转场。",
+    infoHierarchy: "标题、章节、说明三层分明。",
+    radius: "18px / 演示模板圆角",
+    shadow: "轻中度阴影，强调投影和层级。",
+    material: "编辑排版感",
+    glow: "章节标题轻微高亮",
+    border: "克制边线，突出结构稳定性",
+    suitableScenarios: "PPT / 报告 / 章节页 / 方案页",
+    unsuitableScenarios: "高情绪化活动页 / 过度装饰页面",
+    recommendedPageTypes: "封面 / 章节页 / 说明页",
+    reusableRules: "版式先统一，再追求风格扩散。",
+    prompt: "用于 PPT 与方案表达，强调标准化、可替换和视觉秩序。",
   },
 ];
 
@@ -76,13 +128,25 @@ const dom = {
   draftTitle: document.getElementById("draftTitle"),
   draftSummary: document.getElementById("draftSummary"),
   draftMainColor: document.getElementById("draftMainColor"),
-  draftScenarios: document.getElementById("draftScenarios"),
+  draftSecondaryColor: document.getElementById("draftSecondaryColor"),
+  draftBackgroundColor: document.getElementById("draftBackgroundColor"),
+  draftGradientRule: document.getElementById("draftGradientRule"),
+  draftStyleName: document.getElementById("draftStyleName"),
+  draftMoodKeywords: document.getElementById("draftMoodKeywords"),
+  draftEmotionKeywords: document.getElementById("draftEmotionKeywords"),
   draftPageStructure: document.getElementById("draftPageStructure"),
-  draftChartStyle: document.getElementById("draftChartStyle"),
-  draftIconStyle: document.getElementById("draftIconStyle"),
-  draftIllustrationStyle: document.getElementById("draftIllustrationStyle"),
-  draftPptPattern: document.getElementById("draftPptPattern"),
-  draftRules: document.getElementById("draftRules"),
+  draftCardStructure: document.getElementById("draftCardStructure"),
+  draftInfoHierarchy: document.getElementById("draftInfoHierarchy"),
+  draftRadius: document.getElementById("draftRadius"),
+  draftShadow: document.getElementById("draftShadow"),
+  draftMaterial: document.getElementById("draftMaterial"),
+  draftGlow: document.getElementById("draftGlow"),
+  draftBorder: document.getElementById("draftBorder"),
+  draftSuitableScenarios: document.getElementById("draftSuitableScenarios"),
+  draftUnsuitableScenarios: document.getElementById("draftUnsuitableScenarios"),
+  draftRecommendedPageTypes: document.getElementById("draftRecommendedPageTypes"),
+  draftReusableRules: document.getElementById("draftReusableRules"),
+  draftPrompt: document.getElementById("draftPrompt"),
   saveDraftButton: document.getElementById("saveDraftButton"),
   exportDraftButton: document.getElementById("exportDraftButton"),
 };
@@ -189,13 +253,26 @@ function buildDefaultFields(libraryDef) {
     source: "示例资产",
     type: libraryDef.label,
     styleTags: [libraryDef.label],
-    scenarios: libraryDef.scenarios,
+    mainColor: libraryDef.mainColor,
+    secondaryColor: libraryDef.secondaryColor,
+    backgroundColor: libraryDef.backgroundColor,
+    gradientRule: libraryDef.gradientRule,
+    styleName: libraryDef.styleName,
+    moodKeywords: libraryDef.moodKeywords,
+    emotionKeywords: libraryDef.emotionKeywords,
     pageStructure: libraryDef.pageStructure,
-    chartStyle: libraryDef.chartStyle,
-    iconStyle: libraryDef.iconStyle,
-    illustrationStyle: libraryDef.illustrationStyle,
-    pptPattern: libraryDef.pptPattern,
-    rules: libraryDef.rules,
+    cardStructure: libraryDef.cardStructure,
+    infoHierarchy: libraryDef.infoHierarchy,
+    radius: libraryDef.radius,
+    shadow: libraryDef.shadow,
+    material: libraryDef.material,
+    glow: libraryDef.glow,
+    border: libraryDef.border,
+    suitableScenarios: libraryDef.suitableScenarios,
+    unsuitableScenarios: libraryDef.unsuitableScenarios,
+    recommendedPageTypes: libraryDef.recommendedPageTypes,
+    reusableRules: libraryDef.reusableRules,
+    prompt: libraryDef.prompt,
   };
 }
 
@@ -203,7 +280,7 @@ function normalizeAsset(item, libraryDef, origin = "seed") {
   const base = buildDefaultFields(libraryDef);
   const thumbnailColors = item.thumbnail?.colors?.length >= 2
     ? item.thumbnail.colors.slice(0, 2)
-    : [item.mainColor || "#0F172A", "#38BDF8"];
+    : [item.mainColor || base.mainColor || "#0F172A", item.secondaryColor || base.secondaryColor || "#38BDF8"];
   const mainColor = normalizeHex(item.mainColor || thumbnailColors[0] || "#0F172A");
   return {
     id: item.id || `${origin}-${libraryDef.key}-${item.title}`,
@@ -212,15 +289,25 @@ function normalizeAsset(item, libraryDef, origin = "seed") {
     type: item.type || base.type,
     styleTags: ensureArray(item.styleTags || item.tags || base.styleTags),
     mainColor,
-    scenarios: item.scenarios || base.scenarios,
+    secondaryColor: normalizeHex(item.secondaryColor || thumbnailColors[1] || base.secondaryColor || "#38BDF8"),
+    backgroundColor: normalizeHex(item.backgroundColor || base.backgroundColor || "#08111F"),
+    gradientRule: item.gradientRule || base.gradientRule,
+    styleName: item.styleName || base.styleName,
+    moodKeywords: ensureArray(item.moodKeywords || base.moodKeywords),
+    emotionKeywords: ensureArray(item.emotionKeywords || base.emotionKeywords),
     pageStructure: item.pageStructure || base.pageStructure,
-    chartStyle: item.chartStyle || base.chartStyle,
-    iconStyle: item.iconStyle || base.iconStyle,
-    illustrationStyle: item.illustrationStyle || base.illustrationStyle,
-    pptPattern: item.pptPattern || base.pptPattern,
-    rules: item.rules || item.note || base.rules,
-    highlight: item.highlight || "",
-    note: item.note || "",
+    cardStructure: item.cardStructure || base.cardStructure,
+    infoHierarchy: item.infoHierarchy || base.infoHierarchy,
+    radius: item.radius || base.radius,
+    shadow: item.shadow || base.shadow,
+    material: item.material || base.material,
+    glow: item.glow || base.glow,
+    border: item.border || base.border,
+    suitableScenarios: item.suitableScenarios || item.scenarios || base.suitableScenarios,
+    unsuitableScenarios: item.unsuitableScenarios || base.unsuitableScenarios,
+    recommendedPageTypes: item.recommendedPageTypes || base.recommendedPageTypes,
+    reusableRules: item.reusableRules || item.rules || item.note || base.reusableRules,
+    prompt: item.prompt || base.prompt,
     thumbnail: {
       label: item.thumbnail?.label || libraryDef.thumbnailLabel,
       colors: thumbnailColors.map((color) => normalizeHex(color)),
@@ -232,6 +319,30 @@ function normalizeAsset(item, libraryDef, origin = "seed") {
 
 function renderTags(tags) {
   return tags.map((tag) => `<span class="asset-tag">${escapeHtml(tag)}</span>`).join("");
+}
+
+function renderPills(values) {
+  return values.map((value) => `<span class="asset-pill">${escapeHtml(value)}</span>`).join("");
+}
+
+function renderLayerBlock(title, pairs) {
+  return `
+    <section class="asset-section">
+      <h4>${escapeHtml(title)}</h4>
+      <dl class="asset-layer-list">
+        ${pairs
+          .map(
+            ([label, value]) => `
+              <div>
+                <dt>${escapeHtml(label)}</dt>
+                <dd>${Array.isArray(value) ? renderPills(value) : escapeHtml(value)}</dd>
+              </div>
+            `,
+          )
+          .join("")}
+      </dl>
+    </section>
+  `;
 }
 
 function renderAssetCard(item) {
@@ -252,40 +363,40 @@ function renderAssetCard(item) {
         </div>
         <h3>${escapeHtml(item.title)}</h3>
         <div class="asset-tags">${renderTags(item.styleTags)}</div>
-        <dl class="asset-meta">
-          <div>
-            <dt>来源</dt>
-            <dd>${escapeHtml(item.source)}</dd>
-          </div>
-          <div>
-            <dt>适用场景</dt>
-            <dd>${escapeHtml(item.scenarios)}</dd>
-          </div>
-          <div>
-            <dt>页面结构</dt>
-            <dd>${escapeHtml(item.pageStructure)}</dd>
-          </div>
-          <div>
-            <dt>图表风格</dt>
-            <dd>${escapeHtml(item.chartStyle)}</dd>
-          </div>
-          <div>
-            <dt>icon风格</dt>
-            <dd>${escapeHtml(item.iconStyle)}</dd>
-          </div>
-          <div>
-            <dt>插画风格</dt>
-            <dd>${escapeHtml(item.illustrationStyle)}</dd>
-          </div>
-          <div>
-            <dt>PPT图形拼接特点</dt>
-            <dd>${escapeHtml(item.pptPattern)}</dd>
-          </div>
-          <div>
-            <dt>可复用设计规则</dt>
-            <dd>${escapeHtml(item.rules)}</dd>
-          </div>
-        </dl>
+        <div class="asset-layer-grid">
+          ${renderLayerBlock("颜色层", [
+            ["主色", item.mainColor],
+            ["辅助色", item.secondaryColor],
+            ["背景色", item.backgroundColor],
+            ["渐变规则", item.gradientRule],
+          ])}
+          ${renderLayerBlock("风格层", [
+            ["风格名称", item.styleName],
+            ["气质关键词", item.moodKeywords],
+            ["情绪关键词", item.emotionKeywords],
+          ])}
+          ${renderLayerBlock("结构层", [
+            ["页面结构", item.pageStructure],
+            ["卡片结构", item.cardStructure],
+            ["信息层级", item.infoHierarchy],
+          ])}
+          ${renderLayerBlock("视觉层", [
+            ["圆角", item.radius],
+            ["阴影", item.shadow],
+            ["材质", item.material],
+            ["发光", item.glow],
+            ["边框", item.border],
+          ])}
+          ${renderLayerBlock("复用层", [
+            ["适合场景", item.suitableScenarios],
+            ["不适合场景", item.unsuitableScenarios],
+            ["推荐页面类型", item.recommendedPageTypes],
+          ])}
+          ${renderLayerBlock("AI参考层", [
+            ["可复用设计规则", item.reusableRules],
+            ["虾堡生成页面时的参考提示词", item.prompt],
+          ])}
+        </div>
       </div>
     </article>
   `;
@@ -355,11 +466,13 @@ function buildDraftSummary(title, libraryDef, colors) {
 
 function buildDraftRecord(file, imageDataUrl, imageMeta) {
   const libraryDef = getLibraryDef(getActiveLibraryKey());
-  const dominantColors = imageMeta.colors.length >= 2 ? imageMeta.colors.slice(0, 2) : ["#0F172A", "#38BDF8"];
+  const dominantColors = imageMeta.colors.length >= 3 ? imageMeta.colors.slice(0, 3) : [libraryDef.mainColor, libraryDef.secondaryColor, libraryDef.backgroundColor];
   const title = dom.assetTitleInput?.value.trim() || defaultDraftTitle(libraryDef, file.name);
   const source = dom.assetSourceInput?.value.trim() || file.name || "本地图片导入";
   const type = dom.assetTypeInput?.value.trim() || libraryDef.label;
   const styleTags = parseTags(dom.assetTagsInput?.value).length ? parseTags(dom.assetTagsInput.value) : guessMood(dominantColors[0]);
+  const backgroundColor = normalizeHex(dominantColors[2] || libraryDef.backgroundColor);
+  const secondaryColor = normalizeHex(dominantColors[1] || libraryDef.secondaryColor);
   return {
     id: createId(libraryDef.key),
     title,
@@ -367,16 +480,28 @@ function buildDraftRecord(file, imageDataUrl, imageMeta) {
     type,
     styleTags,
     mainColor: normalizeHex(dominantColors[0]),
-    scenarios: libraryDef.scenarios,
+    secondaryColor,
+    backgroundColor,
+    gradientRule: libraryDef.gradientRule,
+    styleName: libraryDef.styleName,
+    moodKeywords: libraryDef.moodKeywords,
+    emotionKeywords: libraryDef.emotionKeywords,
     pageStructure: libraryDef.pageStructure,
-    chartStyle: libraryDef.chartStyle,
-    iconStyle: libraryDef.iconStyle,
-    illustrationStyle: libraryDef.illustrationStyle,
-    pptPattern: libraryDef.pptPattern,
-    rules: libraryDef.rules,
+    cardStructure: libraryDef.cardStructure,
+    infoHierarchy: libraryDef.infoHierarchy,
+    radius: libraryDef.radius,
+    shadow: libraryDef.shadow,
+    material: libraryDef.material,
+    glow: libraryDef.glow,
+    border: libraryDef.border,
+    suitableScenarios: libraryDef.suitableScenarios,
+    unsuitableScenarios: libraryDef.unsuitableScenarios,
+    recommendedPageTypes: libraryDef.recommendedPageTypes,
+    reusableRules: libraryDef.reusableRules,
+    prompt: libraryDef.prompt,
     thumbnail: {
       label: libraryDef.thumbnailLabel,
-      colors: dominantColors.map((color) => normalizeHex(color)),
+      colors: [dominantColors[0], secondaryColor, backgroundColor].map((color) => normalizeHex(color)),
       imageDataUrl,
     },
     sourceFile: file.name,
@@ -460,13 +585,25 @@ function updateDraftPreview(draft) {
     dom.draftTitle.textContent = "尚未选择图片";
     dom.draftSummary.textContent = "选择一张截图后，会自动提取主色并填充灵感字段。";
     dom.draftMainColor.textContent = "-";
-    dom.draftScenarios.textContent = "-";
+    dom.draftSecondaryColor.textContent = "-";
+    dom.draftBackgroundColor.textContent = "-";
+    dom.draftGradientRule.textContent = "-";
+    dom.draftStyleName.textContent = "-";
+    dom.draftMoodKeywords.textContent = "-";
+    dom.draftEmotionKeywords.textContent = "-";
     dom.draftPageStructure.textContent = "-";
-    dom.draftChartStyle.textContent = "-";
-    dom.draftIconStyle.textContent = "-";
-    dom.draftIllustrationStyle.textContent = "-";
-    dom.draftPptPattern.textContent = "-";
-    dom.draftRules.textContent = "-";
+    dom.draftCardStructure.textContent = "-";
+    dom.draftInfoHierarchy.textContent = "-";
+    dom.draftRadius.textContent = "-";
+    dom.draftShadow.textContent = "-";
+    dom.draftMaterial.textContent = "-";
+    dom.draftGlow.textContent = "-";
+    dom.draftBorder.textContent = "-";
+    dom.draftSuitableScenarios.textContent = "-";
+    dom.draftUnsuitableScenarios.textContent = "-";
+    dom.draftRecommendedPageTypes.textContent = "-";
+    dom.draftReusableRules.textContent = "-";
+    dom.draftPrompt.textContent = "-";
     return;
   }
 
@@ -477,13 +614,25 @@ function updateDraftPreview(draft) {
   dom.draftTitle.textContent = draft.title;
   dom.draftSummary.textContent = buildDraftSummary(draft.title, getLibraryDef(getActiveLibraryKey()), draft.thumbnail.colors);
   dom.draftMainColor.textContent = draft.mainColor;
-  dom.draftScenarios.textContent = draft.scenarios;
+  dom.draftSecondaryColor.textContent = draft.secondaryColor;
+  dom.draftBackgroundColor.textContent = draft.backgroundColor;
+  dom.draftGradientRule.textContent = draft.gradientRule;
+  dom.draftStyleName.textContent = draft.styleName;
+  dom.draftMoodKeywords.textContent = draft.moodKeywords.join("、");
+  dom.draftEmotionKeywords.textContent = draft.emotionKeywords.join("、");
   dom.draftPageStructure.textContent = draft.pageStructure;
-  dom.draftChartStyle.textContent = draft.chartStyle;
-  dom.draftIconStyle.textContent = draft.iconStyle;
-  dom.draftIllustrationStyle.textContent = draft.illustrationStyle;
-  dom.draftPptPattern.textContent = draft.pptPattern;
-  dom.draftRules.textContent = draft.rules;
+  dom.draftCardStructure.textContent = draft.cardStructure;
+  dom.draftInfoHierarchy.textContent = draft.infoHierarchy;
+  dom.draftRadius.textContent = draft.radius;
+  dom.draftShadow.textContent = draft.shadow;
+  dom.draftMaterial.textContent = draft.material;
+  dom.draftGlow.textContent = draft.glow;
+  dom.draftBorder.textContent = draft.border;
+  dom.draftSuitableScenarios.textContent = draft.suitableScenarios;
+  dom.draftUnsuitableScenarios.textContent = draft.unsuitableScenarios;
+  dom.draftRecommendedPageTypes.textContent = draft.recommendedPageTypes;
+  dom.draftReusableRules.textContent = draft.reusableRules;
+  dom.draftPrompt.textContent = draft.prompt;
 }
 
 function persistDraft(draft) {

@@ -4,40 +4,142 @@
       "title": "封面大标题模板",
       "thumbnail": {
         "label": "Cover",
-        "colors": ["#111827", "#FDE047"]
+        "colors": [
+          "#111827",
+          "#FDE047"
+        ]
       },
       "type": "模板",
-      "tags": ["封面", "标题", "演示"],
+      "tags": [
+        "封面",
+        "标题",
+        "演示"
+      ],
       "scenarios": "PPT 封面 / 报告首页 / 章节封面",
       "mainColor": "#FDE047",
       "highlight": "大标题居中，配图或色块强提示主题。",
-      "note": "适合用来统一开场气质。"
+      "note": "适合用来统一开场气质。",
+      "secondaryColor": "#0F172A",
+      "backgroundColor": "#111827",
+      "gradientRule": "封面主色 + 黑白中性色，形成清晰版式骨架。",
+      "styleName": "演示模板感",
+      "moodKeywords": [
+        "结构化",
+        "规范",
+        "演示"
+      ],
+      "emotionKeywords": [
+        "干净",
+        "明确",
+        "可靠"
+      ],
+      "cardStructure": "模块拼接清晰，留白支持信息转场。",
+      "infoHierarchy": "标题、章节、说明三层分明。",
+      "radius": "18px / 演示模板圆角",
+      "shadow": "轻中度阴影，强调投影和层级。",
+      "material": "编辑排版感",
+      "glow": "章节标题轻微高亮",
+      "border": "克制边线，突出结构稳定性",
+      "suitableScenarios": "PPT / 报告 / 章节页 / 方案页",
+      "unsuitableScenarios": "高情绪化活动页 / 过度装饰页面",
+      "recommendedPageTypes": "封面 / 章节页 / 说明页",
+      "reusableRules": "版式先统一，再追求风格扩散。",
+      "prompt": "用于 PPT 与方案表达，强调标准化、可替换和视觉秩序。",
+      "pageStructure": "封面 / 章节转场 / 对照页 / 说明页"
     },
     {
       "title": "章节转场模板",
       "thumbnail": {
         "label": "Section",
-        "colors": ["#0F172A", "#7DD3FC"]
+        "colors": [
+          "#0F172A",
+          "#7DD3FC"
+        ]
       },
       "type": "模板",
-      "tags": ["章节页", "过渡", "节奏"],
+      "tags": [
+        "章节页",
+        "过渡",
+        "节奏"
+      ],
       "scenarios": "PPT 分章 / 汇报过渡 / 内容分段",
       "mainColor": "#7DD3FC",
       "highlight": "一眼看懂章节切换，给内容留呼吸感。",
-      "note": "适合做目录与分段之间的承接页。"
+      "note": "适合做目录与分段之间的承接页。",
+      "secondaryColor": "#7DD3FC",
+      "backgroundColor": "#0F172A",
+      "gradientRule": "深底 + 冷色标题条，强化章节感和切页感。",
+      "styleName": "章节转场感",
+      "moodKeywords": [
+        "转场",
+        "节奏",
+        "分段"
+      ],
+      "emotionKeywords": [
+        "过渡",
+        "清晰",
+        "有序"
+      ],
+      "cardStructure": "大标题 + 章节编号 + 留白画面。",
+      "infoHierarchy": "章节名最强，其次是说明内容。",
+      "radius": "20px / 章节页圆角",
+      "shadow": "柔和层级阴影，强调过渡。",
+      "material": "章节页面板感",
+      "glow": "章节数字轻发光",
+      "border": "弱边框，支持过渡感",
+      "suitableScenarios": "PPT 分章 / 汇报过渡 / 内容分段",
+      "unsuitableScenarios": "数据密集总览 / 细粒度操作界面",
+      "recommendedPageTypes": "章节页 / 转场页 / 分隔页",
+      "reusableRules": "章节页要让观众知道“换段了”。",
+      "prompt": "用于章节转场和分段，强调过渡感、秩序和阅读停顿。",
+      "pageStructure": "大标题 / 章节编号 / 留白背景"
     },
     {
       "title": "双栏说明模板",
       "thumbnail": {
         "label": "Two Column",
-        "colors": ["#1E293B", "#86EFAC"]
+        "colors": [
+          "#1E293B",
+          "#86EFAC"
+        ]
       },
       "type": "模板",
-      "tags": ["说明", "对照", "结构化"],
+      "tags": [
+        "说明",
+        "对照",
+        "结构化"
+      ],
       "scenarios": "方法页 / 方案页 / 对比说明",
       "mainColor": "#86EFAC",
       "highlight": "左右分栏，适合把观点和证据并排展示。",
-      "note": "适合做逻辑清晰、结构明确的页面。"
+      "note": "适合做逻辑清晰、结构明确的页面。",
+      "secondaryColor": "#86EFAC",
+      "backgroundColor": "#1E293B",
+      "gradientRule": "中性底 + 强调色并排，形成对照结构。",
+      "styleName": "对照说明感",
+      "moodKeywords": [
+        "对照",
+        "说明",
+        "结构"
+      ],
+      "emotionKeywords": [
+        "明晰",
+        "可靠",
+        "稳妥"
+      ],
+      "cardStructure": "左右双栏，左讲观点，右讲证据。",
+      "infoHierarchy": "先给结论，再用对照区支撑。",
+      "radius": "16px / 对照页圆角",
+      "shadow": "低至中等阴影，保持表格式克制。",
+      "material": "说明文档感",
+      "glow": "轻微重点提示光",
+      "border": "清晰边界，增强对照阅读",
+      "suitableScenarios": "方法页 / 方案页 / 对比说明",
+      "unsuitableScenarios": "强情绪活动页 / 纯故事化页面",
+      "recommendedPageTypes": "说明页 / 对照页 / 方法页",
+      "reusableRules": "左右信息必须保持语义对称。",
+      "prompt": "用于说明和对照表达，强调结构化、可比较和信息对称。",
+      "pageStructure": "左右双栏 / 左观点右证据 / 总结收口"
     }
   ]
 }
