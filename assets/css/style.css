@@ -71,7 +71,8 @@ body::before {
 .hero-copy,
 .preview-card,
 .toolbar-item,
-.palette-card {
+.palette-card,
+.usage-panel {
   background: var(--panel);
   border: 1px solid var(--line);
   backdrop-filter: blur(20px);
@@ -220,6 +221,29 @@ h1 {
   display: block;
   margin-top: 8px;
   font-size: 1.02rem;
+}
+
+.usage-section {
+  display: grid;
+  gap: 18px;
+}
+
+.usage-panel {
+  border-radius: var(--radius-xl);
+  padding: 8px 4px;
+}
+
+.usage-list {
+  margin: 0;
+  padding: 6px 22px 6px 46px;
+  display: grid;
+  gap: 14px;
+  line-height: 1.75;
+  color: rgba(229, 238, 251, 0.86);
+}
+
+.usage-list li {
+  padding-left: 6px;
 }
 
 .palette-section {
@@ -404,6 +428,11 @@ h1 {
   .preview-swatches,
   .palette-swatches {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .usage-list {
+    padding-left: 34px;
+    padding-right: 16px;
   }
 
   .palette-swatch {

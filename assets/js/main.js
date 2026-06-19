@@ -3,24 +3,28 @@ const palettes = [
     name: "Ocean Mist",
     description: "冷静、克制，适合仪表盘和信息密度较高的界面。",
     tag: "Dashboard",
+    useCase: "仪表盘 / 数据看板",
     colors: ["#0F172A", "#1E293B", "#334155", "#38BDF8", "#7DD3FC"],
   },
   {
     name: "Sunlit Paper",
     description: "温暖但不喧闹，适合品牌页和内容展示场景。",
     tag: "Editorial",
+    useCase: "PPT / 内容页 / 品牌展示",
     colors: ["#FFF7ED", "#FDBA74", "#FB7185", "#F59E0B", "#7C2D12"],
   },
   {
     name: "Forest Signal",
     description: "自然系高对比配色，适合强调状态和增长。",
     tag: "Growth",
+    useCase: "日报 / 增长分析 / 状态提示",
     colors: ["#052E16", "#166534", "#22C55E", "#86EFAC", "#D1FAE5"],
   },
   {
     name: "Midnight Neon",
     description: "偏科技感的高饱和组合，适合活动页和深色产品界面。",
     tag: "Launch",
+    useCase: "驾驶舱 / 活动页 / 深色界面",
     colors: ["#020617", "#312E81", "#7C3AED", "#22D3EE", "#FDE047"],
   },
 ];
@@ -151,6 +155,7 @@ function renderPaletteCards() {
           <div class="palette-values">
             <strong>${palette.colors.join(" • ")}</strong>
             <span>${hexToRgb(palette.colors[0])} 起始色</span>
+            <span>适用场景：${palette.useCase}</span>
           </div>
           <button class="palette-cta" type="button" data-palette="${palette.name}">
             查看此组
