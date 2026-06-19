@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "title": "Ocean Mist",
+      "thumbnail": {
+        "label": "Dashboard",
+        "colors": ["#0F172A", "#38BDF8"]
+      },
+      "type": "配色",
+      "tags": ["深色", "仪表盘", "高对比"],
+      "scenarios": "数据看板 / 运营日报 / 指标总览",
+      "mainColor": "#0F172A",
+      "highlight": "深色底配冷青强调，信息层级清晰。",
+      "note": "适合高密度界面和技术感较强的场景。"
+    },
+    {
+      "title": "Sunlit Paper",
+      "thumbnail": {
+        "label": "Editorial",
+        "colors": ["#FFF7ED", "#F59E0B"]
+      },
+      "type": "配色",
+      "tags": ["暖色", "品牌页", "内容展示"],
+      "scenarios": "PPT 首页 / 内容页 / 品牌介绍",
+      "mainColor": "#FFF7ED",
+      "highlight": "暖而不刺眼，适合带有人文气质的表达。",
+      "note": "适合需要亲和感和阅读舒适度的页面。"
+    },
+    {
+      "title": "Forest Signal",
+      "thumbnail": {
+        "label": "Growth",
+        "colors": ["#052E16", "#22C55E"]
+      },
+      "type": "配色",
+      "tags": ["增长", "状态", "自然系"],
+      "scenarios": "增长分析 / 状态提示 / 周报图表",
+      "mainColor": "#052E16",
+      "highlight": "绿色层次明确，适合强调增长和健康状态。",
+      "note": "适合有正向指标、经营改善表达的场景。"
+    }
+  ]
+}

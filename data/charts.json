@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "title": "KPI 组合图",
+      "thumbnail": {
+        "label": "KPI",
+        "colors": ["#0F172A", "#7DD3FC"]
+      },
+      "type": "图表",
+      "tags": ["看板", "指标", "组合"],
+      "scenarios": "驾驶舱首页 / 周报总览 / 经营监控",
+      "mainColor": "#7DD3FC",
+      "highlight": "用单屏组合展示核心指标与趋势。",
+      "note": "适合做首页总览，不强调复杂交互。"
+    },
+    {
+      "title": "趋势折线板",
+      "thumbnail": {
+        "label": "Trend",
+        "colors": ["#111827", "#22D3EE"]
+      },
+      "type": "图表",
+      "tags": ["趋势", "时间序列", "增长"],
+      "scenarios": "日报趋势 / 月度变化 / 预测跟踪",
+      "mainColor": "#22D3EE",
+      "highlight": "折线与面积结合，便于读取增长节奏。",
+      "note": "适合说明过程变化，而不是只报结果。"
+    },
+    {
+      "title": "分布条形板",
+      "thumbnail": {
+        "label": "Distribution",
+        "colors": ["#1E293B", "#F59E0B"]
+      },
+      "type": "图表",
+      "tags": ["分布", "对比", "排序"],
+      "scenarios": "品类对比 / 区域分布 / 结构分析",
+      "mainColor": "#F59E0B",
+      "highlight": "条形长度直接表达结构差异，阅读成本低。",
+      "note": "适合需要快速比较高低差的场景。"
+    }
+  ]
+}

@@ -6,9 +6,9 @@
     <meta name="theme-color" content="#0f172a" />
     <meta
       name="description"
-      content="配色管理 - 一个支持点击复制 HEX 的静态配色展示页，适合在 GitHub Pages 上直接访问。"
+      content="🦞 虾堡灵感资产库 - 纯静态灵感沉淀首页，承载配色、图表、页面结构与模板风格资产。"
     />
-    <title>配色管理 | Xiabao Design System</title>
+    <title>🦞 虾堡灵感资产库</title>
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -17,81 +17,110 @@
       <main class="app">
         <section class="hero">
           <div class="hero-copy">
-            <p class="eyebrow">Xiabao Design System</p>
-            <h1>配色管理</h1>
+            <p class="eyebrow">Xiabao Inspiration Library</p>
+            <h1>🦞 虾堡灵感资产库</h1>
             <p class="lead">
-              轻量、纯静态、可公开访问的配色展示页。点击任意颜色即可复制 HEX 值，适合在任何设备上查看和分发。
+              这是一个用于持续沉淀审美资产的纯静态首页。我们先把架构搭好，后续可按配色、图表、页面结构、PPT模板风格和驾驶舱案例持续补充。
             </p>
             <div class="hero-meta">
-              <span>纯静态 HTML / CSS / JS</span>
-              <span>GitHub Pages Ready</span>
-              <span>移动端自适配</span>
+              <span>纯静态 GitHub Pages</span>
+              <span>资产化沉淀</span>
+              <span>可持续扩展</span>
             </div>
           </div>
 
-          <aside class="preview-card" aria-label="当前配色预览">
-            <div class="preview-swatches" id="previewSwatches"></div>
-            <div class="preview-copy">
-              <p class="preview-label">当前选中</p>
-              <h2 id="previewName">Ocean Mist</h2>
-              <p id="previewDescription">冷静、克制，适合仪表盘和信息密度较高的界面。</p>
-              <div class="preview-hex-row">
-                <code id="previewHex">#0F172A</code>
-                <button class="copy-button" id="copyPreviewButton" type="button">复制 HEX</button>
-              </div>
+          <aside class="hero-panel" aria-label="资产库导航">
+            <p class="panel-label">导航</p>
+            <nav class="nav-grid" aria-label="首页导航">
+              <a href="#palettes">配色库</a>
+              <a href="#charts">图表库</a>
+              <a href="#pages">页面库</a>
+              <a href="#templates">模板库</a>
+              <a href="#favorites">收藏夹</a>
+            </nav>
+            <div class="hero-note">
+              <p>第一阶段只完成架构，不做上传、AI 分析或登录功能。</p>
             </div>
           </aside>
-        </section>
-
-        <section class="toolbar" aria-label="配色说明">
-          <div class="toolbar-item">
-            <span class="toolbar-label">操作</span>
-            <strong>点击色块自动复制</strong>
-          </div>
-          <div class="toolbar-item">
-            <span class="toolbar-label">输出</span>
-            <strong>HEX / RGB / 用途标签</strong>
-          </div>
-          <div class="toolbar-item">
-            <span class="toolbar-label">兼容</span>
-            <strong>桌面和手机都好看</strong>
-          </div>
         </section>
 
         <section class="usage-section" aria-labelledby="usageTitle">
           <div class="section-heading">
             <div>
-              <p class="section-kicker">Usage Guide</p>
+              <p class="section-kicker">Library Guide</p>
               <h2 id="usageTitle">使用说明</h2>
             </div>
-            <p class="section-note">先选配色组，再复制 HEX，最后再落到 PPT、日报或驾驶舱里，能少走很多回头路。</p>
+            <p class="section-note">先按资产类型沉淀，再按场景整理标签，后续再做筛选与收藏机制。</p>
           </div>
 
           <div class="usage-panel">
             <ol class="usage-list">
-              <li>这个网站是我的配色参考库。</li>
-              <li>做 PPT、日报、驾驶舱时，先选择合适的配色组。</li>
-              <li>点击任意色块即可复制 HEX 值。</li>
-              <li>每组配色都标注了适用场景，方便快速判断。</li>
+              <li>配色、图表、页面结构、PPT模板风格、驾驶舱案例都统一收进这个库。</li>
+              <li>做 PPT、日报、驾驶舱前，先在对应资产库里挑参考方向。</li>
+              <li>每条灵感都保留统一字段，方便未来横向对比和持续扩展。</li>
+              <li>当前阶段只搭框架，不做复杂交互。</li>
             </ol>
           </div>
         </section>
 
-        <section class="palette-section">
+        <section class="library-section" id="palettes" aria-labelledby="palettesTitle">
           <div class="section-heading">
             <div>
               <p class="section-kicker">Palette Library</p>
-              <h2>精选配色卡片</h2>
+              <h2 id="palettesTitle">配色库</h2>
             </div>
-            <p class="section-note">所有颜色信息都使用相对路径和前端数据渲染，不依赖本地磁盘或 Mac 特定目录。</p>
+            <p class="section-note">用于积累主色、强调色和氛围方向，先把配色风格统一到可复用的卡片结构中。</p>
           </div>
+          <div class="asset-grid" data-library-grid="palettes"></div>
+        </section>
 
-          <div class="palette-grid" id="paletteGrid" aria-live="polite"></div>
+        <section class="library-section" id="charts" aria-labelledby="chartsTitle">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Chart Library</p>
+              <h2 id="chartsTitle">图表库</h2>
+            </div>
+            <p class="section-note">沉淀柱状图、折线图、指标看板和数据强调方式，方便后续复用到日报和驾驶舱。</p>
+          </div>
+          <div class="asset-grid" data-library-grid="charts"></div>
+        </section>
+
+        <section class="library-section" id="pages" aria-labelledby="pagesTitle">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Page Library</p>
+              <h2 id="pagesTitle">页面库</h2>
+            </div>
+            <p class="section-note">收集高质量页面结构、排版节奏和信息层级，逐步形成可检索的页面灵感目录。</p>
+          </div>
+          <div class="asset-grid" data-library-grid="pages"></div>
+        </section>
+
+        <section class="library-section" id="templates" aria-labelledby="templatesTitle">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Template Library</p>
+              <h2 id="templatesTitle">模板库</h2>
+            </div>
+            <p class="section-note">用于沉淀 PPT 模板风格、封面节奏、章节页和常用版式的视觉规范。</p>
+          </div>
+          <div class="asset-grid" data-library-grid="templates"></div>
+        </section>
+
+        <section class="library-section" id="favorites" aria-labelledby="favoritesTitle">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Favorites</p>
+              <h2 id="favoritesTitle">收藏夹</h2>
+            </div>
+            <p class="section-note">先作为收藏入口占位，后续再沉淀筛选与归档规则。</p>
+          </div>
+          <div class="favorites-panel">
+            <p class="favorites-empty">收藏夹当前为空，后续会用于汇总最常用、最值得复用的灵感卡片。</p>
+          </div>
         </section>
       </main>
     </div>
-
-    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
     <script src="assets/js/main.js"></script>
   </body>

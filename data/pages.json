@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "title": "运营首页",
+      "thumbnail": {
+        "label": "Home",
+        "colors": ["#0F172A", "#A78BFA"]
+      },
+      "type": "页面",
+      "tags": ["首页", "总览", "模块化"],
+      "scenarios": "经营首页 / 项目首页 / 产品总览",
+      "mainColor": "#A78BFA",
+      "highlight": "头部总览加多模块分区，适合承载复杂信息。",
+      "note": "关注信息层级与首屏抓重点。"
+    },
+    {
+      "title": "专题落地页",
+      "thumbnail": {
+        "label": "Landing",
+        "colors": ["#111827", "#FB7185"]
+      },
+      "type": "页面",
+      "tags": ["活动页", "故事线", "转化"],
+      "scenarios": "专题发布 / 活动介绍 / 产品宣传",
+      "mainColor": "#FB7185",
+      "highlight": "通过节奏和视觉锚点建立浏览路径。",
+      "note": "适合需要把信息讲清楚的单页结构。"
+    },
+    {
+      "title": "长图叙事页",
+      "thumbnail": {
+        "label": "Story",
+        "colors": ["#0B1220", "#38BDF8"]
+      },
+      "type": "页面",
+      "tags": ["长图", "叙事", "阅读"],
+      "scenarios": "公众号长图 / 报告页 / 品牌故事",
+      "mainColor": "#38BDF8",
+      "highlight": "适合从上到下的故事推进与视觉节奏控制。",
+      "note": "适合做解释型和展示型页面参考。"
+    }
+  ]
+}

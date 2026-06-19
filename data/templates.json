@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "title": "封面大标题模板",
+      "thumbnail": {
+        "label": "Cover",
+        "colors": ["#111827", "#FDE047"]
+      },
+      "type": "模板",
+      "tags": ["封面", "标题", "演示"],
+      "scenarios": "PPT 封面 / 报告首页 / 章节封面",
+      "mainColor": "#FDE047",
+      "highlight": "大标题居中，配图或色块强提示主题。",
+      "note": "适合用来统一开场气质。"
+    },
+    {
+      "title": "章节转场模板",
+      "thumbnail": {
+        "label": "Section",
+        "colors": ["#0F172A", "#7DD3FC"]
+      },
+      "type": "模板",
+      "tags": ["章节页", "过渡", "节奏"],
+      "scenarios": "PPT 分章 / 汇报过渡 / 内容分段",
+      "mainColor": "#7DD3FC",
+      "highlight": "一眼看懂章节切换，给内容留呼吸感。",
+      "note": "适合做目录与分段之间的承接页。"
+    },
+    {
+      "title": "双栏说明模板",
+      "thumbnail": {
+        "label": "Two Column",
+        "colors": ["#1E293B", "#86EFAC"]
+      },
+      "type": "模板",
+      "tags": ["说明", "对照", "结构化"],
+      "scenarios": "方法页 / 方案页 / 对比说明",
+      "mainColor": "#86EFAC",
+      "highlight": "左右分栏，适合把观点和证据并排展示。",
+      "note": "适合做逻辑清晰、结构明确的页面。"
+    }
+  ]
+}
