@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta
+      name="description"
+      content="配色管理 - 一个支持点击复制 HEX 的静态配色展示页，适合在 GitHub Pages 上直接访问。"
+    />
+    <title>配色管理 | Xiabao Design System</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <main class="app">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Xiabao Design System</p>
+            <h1>配色管理</h1>
+            <p class="lead">
+              轻量、纯静态、可公开访问的配色展示页。点击任意颜色即可复制 HEX 值，适合在任何设备上查看和分发。
+            </p>
+            <div class="hero-meta">
+              <span>纯静态 HTML / CSS / JS</span>
+              <span>GitHub Pages Ready</span>
+              <span>移动端自适配</span>
+            </div>
+          </div>
+
+          <aside class="preview-card" aria-label="当前配色预览">
+            <div class="preview-swatches" id="previewSwatches"></div>
+            <div class="preview-copy">
+              <p class="preview-label">当前选中</p>
+              <h2 id="previewName">Ocean Mist</h2>
+              <p id="previewDescription">冷静、克制，适合仪表盘和信息密度较高的界面。</p>
+              <div class="preview-hex-row">
+                <code id="previewHex">#0F172A</code>
+                <button class="copy-button" id="copyPreviewButton" type="button">复制 HEX</button>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="toolbar" aria-label="配色说明">
+          <div class="toolbar-item">
+            <span class="toolbar-label">操作</span>
+            <strong>点击色块自动复制</strong>
+          </div>
+          <div class="toolbar-item">
+            <span class="toolbar-label">输出</span>
+            <strong>HEX / RGB / 用途标签</strong>
+          </div>
+          <div class="toolbar-item">
+            <span class="toolbar-label">兼容</span>
+            <strong>桌面和手机都好看</strong>
+          </div>
+        </section>
+
+        <section class="palette-section">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Palette Library</p>
+              <h2>精选配色卡片</h2>
+            </div>
+            <p class="section-note">所有颜色信息都使用相对路径和前端数据渲染，不依赖本地磁盘或 Mac 特定目录。</p>
+          </div>
+
+          <div class="palette-grid" id="paletteGrid" aria-live="polite"></div>
+        </section>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
