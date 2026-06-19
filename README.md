@@ -14,6 +14,11 @@
 │   │   └── main.js
 │   └── images/
 │       └── favicon.svg
+├── data/
+│   ├── palettes.json
+│   ├── charts.json
+│   ├── pages.json
+│   └── templates.json
 ├── README.md
 └── .gitignore
 ```
@@ -33,4 +38,5 @@
 
 - 页面不依赖本地磁盘路径。
 - 页面保持纯静态结构，不包含上传、AI 分析或登录功能。
+- “新增灵感”会在浏览器内生成草稿并支持 JSON 导出，方便回填到 `data/*.json`。
 - 点击色块会复制 HEX 值到剪贴板。

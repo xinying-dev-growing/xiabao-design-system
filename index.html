@@ -27,6 +27,20 @@
               <span>资产化沉淀</span>
               <span>可持续扩展</span>
             </div>
+            <div class="hero-stats" aria-label="资产统计">
+              <div>
+                <span class="stat-label">真实资产总数</span>
+                <strong id="assetTotal">0</strong>
+              </div>
+              <div>
+                <span class="stat-label">已导入草稿</span>
+                <strong id="draftTotal">0</strong>
+              </div>
+              <div>
+                <span class="stat-label">新增灵感</span>
+                <strong id="importState">未开始</strong>
+              </div>
+            </div>
           </div>
 
           <aside class="hero-panel" aria-label="资产库导航">
@@ -37,6 +51,7 @@
               <a href="#pages">页面库</a>
               <a href="#templates">模板库</a>
               <a href="#favorites">收藏夹</a>
+              <a href="#import">新增灵感</a>
             </nav>
             <div class="hero-note">
               <p>第一阶段只完成架构，不做上传、AI 分析或登录功能。</p>
@@ -60,6 +75,78 @@
               <li>每条灵感都保留统一字段，方便未来横向对比和持续扩展。</li>
               <li>当前阶段只搭框架，不做复杂交互。</li>
             </ol>
+          </div>
+        </section>
+
+        <section class="library-section" id="import" aria-labelledby="importTitle">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Ingest Pipeline</p>
+              <h2 id="importTitle">新增灵感</h2>
+            </div>
+            <p class="section-note">导入图片后自动生成灵感草稿，先跑通“图片 -> 结构化卡片 -> JSON 导出”的静态链路。</p>
+          </div>
+
+          <div class="import-panel">
+            <div class="import-form">
+              <label>
+                <span>图片导入</span>
+                <input id="assetImageInput" type="file" accept="image/*" />
+              </label>
+              <label>
+                <span>目标库</span>
+                <select id="assetLibrarySelect">
+                  <option value="palettes">配色库</option>
+                  <option value="charts">图表库</option>
+                  <option value="pages">页面库</option>
+                  <option value="templates">模板库</option>
+                </select>
+              </label>
+              <label>
+                <span>标题</span>
+                <input id="assetTitleInput" type="text" placeholder="例如：高密度日报风格参考" />
+              </label>
+              <label>
+                <span>来源</span>
+                <input id="assetSourceInput" type="text" placeholder="例如：小红书截图 / PPT 截图 / 驾驶舱截图" />
+              </label>
+              <label>
+                <span>类型</span>
+                <input id="assetTypeInput" type="text" placeholder="例如：配色 / 图表 / 页面 / 模板" />
+              </label>
+              <label class="import-full">
+                <span>风格标签</span>
+                <input id="assetTagsInput" type="text" placeholder="例如：克制、科技感、高对比，使用逗号分隔" />
+              </label>
+            </div>
+
+            <div class="import-preview">
+              <div class="import-preview-top">
+                <div class="import-thumb" id="importThumb">等待导入</div>
+                <div>
+                  <p class="panel-label">自动生成草稿</p>
+                  <h3 id="draftTitle">尚未选择图片</h3>
+                  <p id="draftSummary">选择一张截图后，会自动提取主色并填充灵感字段。</p>
+                </div>
+              </div>
+
+              <dl class="draft-grid">
+                <div><dt>主色</dt><dd id="draftMainColor">-</dd></div>
+                <div><dt>适用场景</dt><dd id="draftScenarios">-</dd></div>
+                <div><dt>页面结构</dt><dd id="draftPageStructure">-</dd></div>
+                <div><dt>图表风格</dt><dd id="draftChartStyle">-</dd></div>
+                <div><dt>icon风格</dt><dd id="draftIconStyle">-</dd></div>
+                <div><dt>插画风格</dt><dd id="draftIllustrationStyle">-</dd></div>
+                <div class="draft-full"><dt>PPT图形拼接特点</dt><dd id="draftPptPattern">-</dd></div>
+                <div class="draft-full"><dt>可复用设计规则</dt><dd id="draftRules">-</dd></div>
+              </dl>
+
+              <div class="import-actions">
+                <button id="saveDraftButton" type="button">保存到本地草稿</button>
+                <button id="exportDraftButton" type="button">导出 JSON</button>
+              </div>
+              <p class="import-hint">说明：GitHub Pages 不能直接把内容写回仓库文件，这里先把导入跑通为本地草稿 + JSON 导出。</p>
+            </div>
           </div>
         </section>
 
